@@ -69,7 +69,7 @@ body {
 
 .todoapp h1 {
 	position: absolute;
-	top: -115px;
+	top: -155px;
 	width: 100%;
 	font-size: 100px;
 	font-weight: 100;
@@ -348,10 +348,6 @@ html .clear-completed:active {
 
 .info a:hover {
 	text-decoration: underline;
-}
-
-header {
-	margin: 1rem;
 }
 
 /*

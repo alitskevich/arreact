@@ -3,16 +3,16 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    index: [
-      './index.js'
-    ],
+    lib: [
+      './lib/index.js'
+    ]
   },
   output: {
     // eslint-disable-next-line no-undef
     path: path.resolve(__dirname, ''),
     filename: '[name].js',
     libraryTarget: 'umd2',
-    globalObject: 'this',
+    globalObject: 'this'
   },
   module: {
     rules: [
