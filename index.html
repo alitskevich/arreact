@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="index.css">
   </head>
 
-  <script type="text/x-template" id="App1">
-    <header class="header">
-      <h1>68</h1>
-      <input type="text" class="new-todo" placeholder=":new_todo_hint" autofocus="true" enter="-> todo.add"/> 
-    </header>
-  </script>
-
   <script type="text/x-template" id="App">
     <div>
       <TodoStore ui:ref="todo" />
@@ -81,7 +74,7 @@
   </script>
 
   <script type="text/x-template" id="TodoItem">
-    <li class="{completed|then:completed} {editing|then:editing}">
+    <li class="{completed|then:completed} {editing|then:editing:not}">
       <div class="view">
         <input class="toggle" type="checkbox" checked={completed} data-id={id} toggle="-> todo.inverse"/>
         <label data-editing="true" dblclick="->">{name}</label>
